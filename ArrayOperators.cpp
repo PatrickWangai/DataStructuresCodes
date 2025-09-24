@@ -13,7 +13,6 @@ int main() {
     int arr[2][3];
     int i, j, value, flag;
 
-    // Input
     cout << "Enter 6 elements for a 2x3 array:" << endl;
     for (i = 0; i < 2; i++) {
         for (j = 0; j < 3; j++) {
@@ -21,7 +20,7 @@ int main() {
         }
     }
 
-    // Traverse & Display
+    // Traversing
     cout << "\nArray elements are:" << endl;
     for (i = 0; i < 2; i++) {
         for (j = 0; j < 3; j++) {
@@ -30,14 +29,14 @@ int main() {
         cout << endl;
     }
 
-    // Update
+    // Updating
     cout << "\nEnter position to update (row and column): ";
     cin >> i >> j;
     cout << "Enter new value: ";
     cin >> value;
     arr[i][j] = value;
 
-    // Display after update
+    // Displaying update
     cout << "\nArray after update:" << endl;
     for (i = 0; i < 2; i++) {
         for (j = 0; j < 3; j++) {
@@ -46,12 +45,12 @@ int main() {
         cout << endl;
     }
 
-    // Delete or replace with 0
+    // Deleting
     cout << "\nEnter position to delete (row and column): ";
     cin >> i >> j;
     arr[i][j] = 0;
 
-    // Display after delete
+    // Displaying deletion
     cout << "\nArray after deletion:" << endl;
     for (i = 0; i < 2; i++) {
         for (j = 0; j < 3; j++) {
@@ -60,7 +59,7 @@ int main() {
         cout << endl;
     }
 
-    // Search
+    // Searching
     cout << "\nEnter value to search: ";
     cin >> value;
     flag = 0;
